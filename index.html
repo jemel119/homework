@@ -1,230 +1,198 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stars & Stripes Canvas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stars_and_stripes.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stars & Stripes Canvas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="stars_and_stripes.css">
 </head>
+
 <body>
 
-  <!-- PAGE 1: Freedom's Dawn -->
-  <section class="page" id="page1">
-    <header>
-      <span class="logo">🎆 Stars & Stripes Canvas</span>
-      <nav>
-        <a href="#page1">Dawn</a>
-        <a href="#page2">Plaza</a>
-        <a href="#page3">Unity</a>
-      </nav>
-    </header>
+<header>
 
-    <main>
-      <div class="hero">
-        <div class="stars-bg">
-          <span class="star s1">★</span><span class="star s2">★</span>
-          <span class="star s3">★</span><span class="star s4">★</span>
-          <span class="star s5">★</span><span class="star s6">★</span>
-        </div>
-        <h1>Freedom's Dawn</h1>
-        <p class="sub">The story of America begins at sunrise — with family, fire, and freedom.</p>
-        <a href="#page2" class="btn">Begin the Journey →</a>
-      </div>
+<h1>Stars & Stripes Canvas</h1>
 
-      <div class="cards">
-        <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png" alt="American Flag">
-          <h3>One Nation</h3>
-          <p>Fifty stars. Thirteen stripes. One unbreakable spirit.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?w=400&q=80" alt="4th of July fireworks">
-          <h3>Light the Sky</h3>
-          <p>Every burst of color is a celebration of liberty won.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="BBQ food">
-          <h3>Fire & Feast</h3>
-          <p>The backyard grill — where American summers live.</p>
-        </div>
-      </div>
+<nav>
+<a href="#dawn">Freedom's Dawn</a>
+<a href="#plaza">Patriot's Plaza</a>
+<a href="#united">United We Stand</a>
+</nav>
 
-      <div class="music-bar">
-        <span>🎵 Set the mood</span>
-        <iframe src="https://www.youtube.com/embed/Y4h6T5LZDNU?autoplay=0&controls=1" title="Patriotic music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </main>
+</header>
 
-    <footer>
-      <p>Made with ❤️ &amp; CSS &nbsp;|&nbsp; <strong>Team Members:</strong> [Name 1] &amp; [Name 2]</p>
-      <p class="tagline">"Freedom is the most powerful creative force."</p>
-    </footer>
-  </section>
+<main>
 
-  <!-- PAGE 2: Patriot's Plaza BBQ -->
-  <section class="page" id="page2">
-    <header>
-      <span class="logo">🎆 Stars & Stripes Canvas</span>
-      <nav>
-        <a href="#page1">Dawn</a>
-        <a href="#page2">Plaza</a>
-        <a href="#page3">Unity</a>
-      </nav>
-    </header>
+<section id="dawn" class="page">
 
-    <main>
-      <div class="hero hero-bbq">
-        <h1>Patriot's Plaza</h1>
-        <p class="sub">The backyard is alive. The grill is hot. The family is together.</p>
-      </div>
+<div class="hero hero-one">
 
-      <!-- BBQ Scene -->
-      <div class="bbq-scene" aria-label="Animated backyard BBQ scene">
-        <div class="sky">
-          <div class="sun"></div>
-          <div class="cloud c1"></div>
-          <div class="cloud c2"></div>
-          <span class="bird b1">🐦</span>
-          <span class="bird b2">🐦</span>
-        </div>
-        <div class="yard">
-          <div class="flag-pole">
-            <div class="flag-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/200px-Flag_of_the_United_States.svg.png" alt="American flag waving" class="flag-img">
-            </div>
-            <div class="pole"></div>
-          </div>
-          <div class="grill">
-            <div class="smoke-wrap">
-              <div class="smoke sm1"></div>
-              <div class="smoke sm2"></div>
-              <div class="smoke sm3"></div>
-            </div>
-            <div class="grill-top">🍔</div>
-            <div class="grill-body"></div>
-            <div class="grill-legs"><span></span><span></span></div>
-          </div>
-          <div class="dog">🐕</div>
-          <div class="people">
-            <span class="person" title="Dad at the grill">👨‍🍳</span>
-            <span class="person" title="Mom">👩</span>
-            <span class="person kid" title="Kid running">🧒</span>
-            <span class="person" title="Grandpa">👴</span>
-          </div>
-          <div class="lawn-items">
-            <span class="item bounce">🪁</span>
-            <span class="item">🪑</span>
-            <span class="item">🎈</span>
-            <span class="item bounce2">🌽</span>
-          </div>
-          <div class="sprinkler">💦</div>
-          <div class="fireflies">
-            <span class="ff f1">✨</span>
-            <span class="ff f2">✨</span>
-            <span class="ff f3">✨</span>
-            <span class="ff f4">✨</span>
-          </div>
-          <div class="fence">
-            <span>🚩</span><span>🚩</span><span>🚩</span><span>🚩</span><span>🚩</span>
-          </div>
-        </div>
-      </div>
+<div class="overlay">
 
-      <div class="cards">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&q=80" alt="BBQ grill">
-          <h3>The Grill Master</h3>
-          <p>Burgers, dogs, and ribs — the holy trinity of July 4th.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt="Family gathering">
-          <h3>Family First</h3>
-          <p>Lawn chairs, laughter, and the smell of summer in the air.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=400&q=80" alt="Sparklers">
-          <h3>Sparklers at Dusk</h3>
-          <p>Before the big show, the little lights steal the moment.</p>
-        </div>
-      </div>
+<h2>Freedom's Dawn</h2>
 
-      <div class="nav-bar">
-        <a href="#page1" class="btn btn-outline">← Back to Dawn</a>
-        <a href="#page3" class="btn">United We Stand →</a>
-      </div>
-    </main>
+<p>
+The sun rises over the Atlantic as families prepare for a day of celebration.
+</p>
 
-    <footer>
-      <p>Made with ❤️ &amp; CSS &nbsp;|&nbsp; <strong>Team Members:</strong> [Name 1] &amp; [Name 2]</p>
-      <p class="tagline">"Where there's smoke, there's freedom."</p>
-    </footer>
-  </section>
+<a href="#plaza" class="btn">Continue</a>
 
-  <!-- PAGE 3: United We Stand -->
-  <section class="page" id="page3">
-    <header>
-      <span class="logo">🎆 Stars & Stripes Canvas</span>
-      <nav>
-        <a href="#page1">Dawn</a>
-        <a href="#page2">Plaza</a>
-        <a href="#page3">Unity</a>
-      </nav>
-    </header>
+</div>
 
-    <main>
-      <div class="hero hero-night">
-        <div class="fireworks-wrap" aria-label="Animated fireworks display">
-          <div class="fw fw1"></div>
-          <div class="fw fw2"></div>
-          <div class="fw fw3"></div>
-          <div class="fw fw4"></div>
-          <div class="fw fw5"></div>
-        </div>
-        <h1>United We Stand</h1>
-        <p class="sub">Two hundred and fifty years of freedom — and counting.</p>
-      </div>
+</div>
 
-      <div class="pride-section">
-        <img src="https://images.unsplash.com/photo-1542385151-efd9000785b0?w=900&q=80" alt="4th of July celebration crowd" class="full-img">
-        <blockquote>
-          "We hold these truths to be self-evident, that all men are created equal."
-          <cite>— Declaration of Independence, 1776</cite>
-        </blockquote>
-      </div>
+<div class="cards">
 
-      <div class="cards">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Fireworks over city">
-          <h3>Purple Mountains</h3>
-          <p>From sea to shining sea, this land belongs to everyone.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1597734802096-c62a5ca49a1e?w=400&q=80" alt="Statue of Liberty">
-          <h3>Lady Liberty</h3>
-          <p>Her torch still burns, a beacon for the world's dreamers.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?w=400&q=80" alt="American flag crowd">
-          <h3>One People</h3>
-          <p>Different stories. One flag. Endless possibility.</p>
-        </div>
-      </div>
+<article class="card">
+<h3>Ocean Sunrise</h3>
+<p>Golden light spreads across the water.</p>
+</article>
 
-      <div class="nav-bar">
-        <a href="#page2" class="btn btn-outline">← Back to Plaza</a>
-        <a href="#page1" class="btn">Start Over 🎆</a>
-      </div>
-    </main>
+<article class="card">
+<h3>Patriotic Spirit</h3>
+<p>Flags wave along the shoreline.</p>
+</article>
 
-    <footer>
-      <p>Made with ❤️ &amp; CSS &nbsp;|&nbsp; <strong>Team Members:</strong> [Name 1] &amp; [Name 2]</p>
-      <p class="tagline">"Freedom is the most powerful creative force. This project celebrates American independence through code and creativity."</p>
-    </footer>
-  </section>
+<article class="card">
+<h3>Morning Flight</h3>
+<p>Seagulls glide across the sky.</p>
+</article>
 
-  <!-- Default: redirect to page1 if no hash -->
-  <script>if(!location.hash) location.hash='#page1';</script>
+</div>
+
+</section>
+
+<section id="plaza" class="page">
+
+<div class="hero hero-two">
+
+<div class="overlay">
+
+<h2>Patriot's Plaza</h2>
+
+<p>
+Families gather along the beach enjoying music, food, games, and summer fun.
+</p>
+
+</div>
+
+</div>
+
+<div class="beach-scene">
+
+<div class="wave wave1"></div>
+<div class="wave wave2"></div>
+
+<div class="seagull s1">🕊</div>
+<div class="seagull s2">🕊</div>
+
+<div class="vendor">🍦</div>
+
+</div>
+
+<div class="cards">
+
+<article class="card">
+<h3>Boardwalk Treats</h3>
+<p>Visitors enjoy snacks and ice cream.</p>
+</article>
+
+<article class="card">
+<h3>Beach Gathering</h3>
+<p>Families relax on blankets watching the ocean.</p>
+</article>
+
+<article class="card">
+<h3>Summer Celebration</h3>
+<p>Music and laughter fill the air.</p>
+</article>
+
+</div>
+
+<div class="center">
+<a href="#united" class="btn">Finale</a>
+</div>
+
+</section>
+
+<section id="united" class="page">
+
+<div class="hero hero-three">
+
+<div class="overlay">
+
+<h2>United We Stand</h2>
+
+<p>
+Night falls as fireworks illuminate the coastline.
+</p>
+
+</div>
+
+</div>
+
+<div class="fireworks">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<div class="cards">
+
+<article class="card">
+<h3>Fireworks</h3>
+<p>Brilliant colors fill the sky.</p>
+</article>
+
+<article class="card">
+<h3>Community</h3>
+<p>Families celebrate together.</p>
+</article>
+
+<article class="card">
+<h3>Freedom</h3>
+<p>A reminder of unity and independence.</p>
+</article>
+
+</div>
+
+<div class="video-container">
+
+<iframe
+src="https://www.youtube.com/embed/9ETrr-XHBjE"
+title="Patriotic Celebration"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="center">
+<a href="#dawn" class="btn">Start Again</a>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Celebrating freedom, family, community, and the American spirit.
+</p>
+
+</footer>
+
 </body>
 </html>
+```

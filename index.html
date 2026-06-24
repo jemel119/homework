@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stars &amp; Stripes Canvas — A Backyard BBQ Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="stars-and-stripes.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       STICKY HEADER & NAV
+  ══════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#page-1" class="logo" aria-label="Go to start">
+        <span class="logo-star" aria-hidden="true">★</span>
+        <span class="logo-text">Stars &amp; Stripes</span>
+        <span class="logo-star" aria-hidden="true">★</span>
+      </a>
+      <nav class="main-nav" aria-label="Chapter navigation">
+        <a href="#page-1" class="nav-link">
+          <span class="nav-num">01</span>
+          <span class="nav-label">Freedom's Dawn</span>
+        </a>
+        <a href="#page-2" class="nav-link">
+          <span class="nav-num">02</span>
+          <span class="nav-label">Patriot's Plaza</span>
+        </a>
+        <a href="#page-3" class="nav-link">
+          <span class="nav-num">03</span>
+          <span class="nav-label">United We Stand</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       PAGE 1 — FREEDOM'S DAWN
+       Morning backyard: sunrise, the grill wakes up
+  ══════════════════════════════════════════════ -->
+  <main>
+    <section id="page-1" class="page page-1" aria-label="Chapter 1: Freedom's Dawn">
+
+      <!-- HERO -->
+      <div class="hero hero-1">
+        <div class="sky sky-morning">
+          <!-- Animated sun rising -->
+          <div class="sun" aria-hidden="true"></div>
+          <!-- Morning clouds -->
+          <div class="cloud cloud-a" aria-hidden="true"></div>
+          <div class="cloud cloud-b" aria-hidden="true"></div>
+          <!-- Stars fading out -->
+          <div class="fading-stars" aria-hidden="true">
+            <span class="fstar fs1">✦</span>
+            <span class="fstar fs2">✦</span>
+            <span class="fstar fs3">✦</span>
+            <span class="fstar fs4">✦</span>
+            <span class="fstar fs5">✦</span>
+          </div>
+        </div>
+
+        <!-- Ground / grass layer -->
+        <div class="ground" aria-hidden="true">
+          <div class="fence">
+            <!-- Fence posts -->
+            <span class="post"></span><span class="post"></span>
+            <span class="post"></span><span class="post"></span>
+            <span class="post"></span><span class="post"></span>
+            <span class="post"></span><span class="post"></span>
+          </div>
+          <!-- American flags on fence -->
+          <div class="fence-flags" aria-hidden="true">
+            <div class="mini-flag mf1">
+              <div class="flag-body"><div class="flag-canton"></div></div>
+            </div>
+            <div class="mini-flag mf2">
+              <div class="flag-body"><div class="flag-canton"></div></div>
+            </div>
+            <div class="mini-flag mf3">
+              <div class="flag-body"><div class="flag-canton"></div></div>
+            </div>
+          </div>
+          <!-- Grill -->
+          <div class="grill" aria-label="BBQ grill">
+            <div class="grill-body">
+              <div class="grill-lid"></div>
+              <div class="grill-bowl"></div>
+            </div>
+            <div class="grill-legs">
+              <span class="leg"></span><span class="leg"></span>
+            </div>
+            <!-- Smoke from grill -->
+            <div class="smoke-stack" aria-hidden="true">
+              <span class="puff p1"></span>
+              <span class="puff p2"></span>
+              <span class="puff p3"></span>
+            </div>
+          </div>
+          <!-- Dog with bandana -->
+          <div class="dog" aria-label="Dog with American flag bandana">
+            <div class="dog-body">
+              <div class="dog-head">
+                <div class="dog-ear dog-ear-l"></div>
+                <div class="dog-ear dog-ear-r"></div>
+                <div class="dog-eye dog-eye-l"></div>
+                <div class="dog-eye dog-eye-r"></div>
+                <div class="dog-nose"></div>
+                <div class="dog-mouth"></div>
+              </div>
+              <div class="dog-torso">
+                <div class="dog-bandana"></div>
+              </div>
+              <div class="dog-tail"></div>
+              <div class="dog-legs">
+                <span class="dleg"></span><span class="dleg"></span>
+                <span class="dleg"></span><span class="dleg"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-text hero-text-1">
+          <p class="hero-eyebrow">Chapter One</p>
+          <h1 class="hero-title">Freedom's<br/>Dawn</h1>
+          <p class="hero-sub">The smell of charcoal fills the morning air.<br/>America is waking up — and so is the grill.</p>
+        </div>
+      </div>
+
+      <!-- CONTENT CARDS -->
+      <div class="cards-section">
+        <div class="cards-grid">
+
+          <article class="card card-red">
+            <div class="card-icon" aria-hidden="true">🌅</div>
+            <h2 class="card-title">The Morning Ritual</h2>
+            <p class="card-body">Every great 4th of July starts the same way: someone wakes up early, drags out the grill, and lights it before anyone else is out of bed. The neighborhood smells like promise.</p>
+          </article>
+
+          <article class="card card-blue">
+            <div class="card-icon" aria-hidden="true">🐕</div>
+            <h2 class="card-title">Buddy's Ready</h2>
+            <p class="card-body">Buddy the golden retriever has been wearing his red, white, and blue bandana since 6 AM. He doesn't know why everyone is excited — but he is <em>very</em> excited too.</p>
+          </article>
+
+          <article class="card card-gold">
+            <div class="card-icon" aria-hidden="true">🔥</div>
+            <h2 class="card-title">First Light, First Fire</h2>
+            <p class="card-body">Charcoal. Lighter fluid. The satisfying <strong>whomp</strong> of a grill lighting. This is the starting gun of Independence Day — no parade, no fireworks yet. Just fire and freedom.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- STRIPE DIVIDER -->
+      <div class="stripe-divider" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- PAGE NAV -->
+      <div class="page-nav" aria-label="Chapter navigation">
+        <a href="#page-2" class="page-btn page-btn-next" aria-label="Next chapter: Patriot's Plaza">
+          Next Chapter: Patriot's Plaza
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <footer class="page-footer">
+        <p>Stars &amp; Stripes Canvas &nbsp;·&nbsp; A 4th of July Storybook &nbsp;·&nbsp; HTML &amp; CSS Only</p>
+        <p class="footer-quote">"Freedom is nothing but a chance to be better." — Albert Camus</p>
+      </footer>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 2 — PATRIOT'S PLAZA
+         Afternoon: full backyard party in motion
+    ══════════════════════════════════════════════ -->
+    <section id="page-2" class="page page-2" aria-label="Chapter 2: Patriot's Plaza">
+
+      <!-- HERO -->
+      <div class="hero hero-2">
+        <div class="sky sky-afternoon">
+          <div class="cloud cloud-c" aria-hidden="true"></div>
+          <div class="cloud cloud-d" aria-hidden="true"></div>
+          <div class="cloud cloud-e" aria-hidden="true"></div>
+          <!-- Birds -->
+          <div class="birds" aria-hidden="true">
+            <span class="bird b1">⌢</span>
+            <span class="bird b2">⌢</span>
+            <span class="bird b3">⌢</span>
+          </div>
+        </div>
+
+        <div class="ground ground-party" aria-hidden="true">
+          <!-- Sprinkler & kids running -->
+          <div class="sprinkler-area">
+            <div class="sprinkler" aria-hidden="true">
+              <div class="sprinkler-head"></div>
+              <div class="water-arc arc-l"></div>
+              <div class="water-arc arc-r"></div>
+              <div class="water-arc arc-c"></div>
+            </div>
+            <!-- Running kid silhouettes -->
+            <div class="kid kid-1" aria-label="Child running through sprinkler"></div>
+            <div class="kid kid-2" aria-label="Child running through sprinkler"></div>
+          </div>
+
+          <!-- Cornhole game -->
+          <div class="cornhole" aria-label="Cornhole game">
+            <div class="cornhole-board cb-l">
+              <div class="cornhole-hole"></div>
+            </div>
+            <div class="cornhole-board cb-r">
+              <div class="cornhole-hole"></div>
+            </div>
+          </div>
+
+          <!-- Table with food -->
+          <div class="picnic-table" aria-label="Picnic table with food">
+            <div class="table-top">
+              <div class="food-item food-watermelon" title="Watermelon"></div>
+              <div class="food-item food-burger" title="Burger"></div>
+              <div class="food-item food-pie" title="Pie"></div>
+            </div>
+            <div class="table-legs">
+              <span></span><span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-text hero-text-2">
+          <p class="hero-eyebrow">Chapter Two</p>
+          <h2 class="hero-title">Patriot's<br/>Plaza</h2>
+          <p class="hero-sub">The whole neighborhood shows up.<br/>Games, laughter, and the best burgers of the year.</p>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE FIREWORKS HOVER CARDS -->
+      <div class="interactive-section">
+        <h2 class="section-heading">Hover to Celebrate <span aria-hidden="true">🎆</span></h2>
+        <p class="section-sub">Discover the flavors of the plaza — hover each card to light it up.</p>
+
+        <div class="firework-cards">
+
+          <div class="fw-card" tabindex="0" aria-label="Burgers and Dogs card">
+            <div class="fw-burst" aria-hidden="true">
+              <span class="spark s1"></span><span class="spark s2"></span>
+              <span class="spark s3"></span><span class="spark s4"></span>
+              <span class="spark s5"></span><span class="spark s6"></span>
+              <span class="spark s7"></span><span class="spark s8"></span>
+            </div>
+            <div class="fw-content">
+              <span class="fw-emoji" aria-hidden="true">🍔</span>
+              <h3 class="fw-title">Burgers &amp; Dogs</h3>
+              <p class="fw-desc">Smash burgers, hot dogs, brats. The grill master guards these with their life.</p>
+            </div>
+          </div>
+
+          <div class="fw-card" tabindex="0" aria-label="Lawn Games card">
+            <div class="fw-burst" aria-hidden="true">
+              <span class="spark s1"></span><span class="spark s2"></span>
+              <span class="spark s3"></span><span class="spark s4"></span>
+              <span class="spark s5"></span><span class="spark s6"></span>
+              <span class="spark s7"></span><span class="spark s8"></span>
+            </div>
+            <div class="fw-content">
+              <span class="fw-emoji" aria-hidden="true">🎯</span>
+              <h3 class="fw-title">Lawn Games</h3>
+              <p class="fw-desc">Cornhole championships. Horseshoes. The annual arguments about rules everyone forgot.</p>
+            </div>
+          </div>
+
+          <div class="fw-card" tabindex="0" aria-label="Kids & Sprinklers card">
+            <div class="fw-burst" aria-hidden="true">
+              <span class="spark s1"></span><span class="spark s2"></span>
+              <span class="spark s3"></span><span class="spark s4"></span>
+              <span class="spark s5"></span><span class="spark s6"></span>
+              <span class="spark s7"></span><span class="spark s8"></span>
+            </div>
+            <div class="fw-content">
+              <span class="fw-emoji" aria-hidden="true">💦</span>
+              <h3 class="fw-title">Kids &amp; Sprinklers</h3>
+              <p class="fw-desc">Someone turned on the sprinkler at noon. The children have claimed the yard permanently.</p>
+            </div>
+          </div>
+
+          <div class="fw-card" tabindex="0" aria-label="Dessert Table card">
+            <div class="fw-burst" aria-hidden="true">
+              <span class="spark s1"></span><span class="spark s2"></span>
+              <span class="spark s3"></span><span class="spark s4"></span>
+              <span class="spark s5"></span><span class="spark s6"></span>
+              <span class="spark s7"></span><span class="spark s8"></span>
+            </div>
+            <div class="fw-content">
+              <span class="fw-emoji" aria-hidden="true">🍉</span>
+              <h3 class="fw-title">The Dessert Table</h3>
+              <p class="fw-desc">Red velvet cake. Blueberry pie. Watermelon. A flag-themed fruit tray nobody touched.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- STRIPE DIVIDER -->
+      <div class="stripe-divider" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- PAGE NAV -->
+      <div class="page-nav page-nav-both" aria-label="Chapter navigation">
+        <a href="#page-1" class="page-btn page-btn-prev" aria-label="Previous chapter: Freedom's Dawn">
+          <span class="btn-arrow" aria-hidden="true">←</span>
+          Back: Freedom's Dawn
+        </a>
+        <a href="#page-3" class="page-btn page-btn-next" aria-label="Next chapter: United We Stand">
+          Next: United We Stand
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <footer class="page-footer">
+        <p>Stars &amp; Stripes Canvas &nbsp;·&nbsp; A 4th of July Storybook &nbsp;·&nbsp; HTML &amp; CSS Only</p>
+        <p class="footer-quote">"America is not a place — it's an idea." — Bono</p>
+      </footer>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 3 — UNITED WE STAND
+         Evening: fireflies, sparklers, unity
+    ══════════════════════════════════════════════ -->
+    <section id="page-3" class="page page-3" aria-label="Chapter 3: United We Stand">
+
+      <!-- HERO -->
+      <div class="hero hero-3">
+        <div class="sky sky-dusk">
+          <!-- Fireflies -->
+          <div class="fireflies" aria-hidden="true">
+            <span class="ff ff1"></span>
+            <span class="ff ff2"></span>
+            <span class="ff ff3"></span>
+            <span class="ff ff4"></span>
+            <span class="ff ff5"></span>
+            <span class="ff ff6"></span>
+            <span class="ff ff7"></span>
+            <span class="ff ff8"></span>
+            <span class="ff ff9"></span>
+            <span class="ff ff10"></span>
+            <span class="ff ff11"></span>
+            <span class="ff ff12"></span>
+          </div>
+          <!-- Stars coming out -->
+          <div class="evening-stars" aria-hidden="true">
+            <span class="estar e1">★</span>
+            <span class="estar e2">✦</span>
+            <span class="estar e3">★</span>
+            <span class="estar e4">✦</span>
+            <span class="estar e5">★</span>
+            <span class="estar e6">✦</span>
+            <span class="estar e7">★</span>
+          </div>
+          <!-- CSS fireworks bursts -->
+          <div class="fireworks-display" aria-hidden="true">
+            <div class="fw-sky fw-sky-1">
+              <div class="burst-ring br-1"></div>
+              <div class="burst-ring br-2"></div>
+            </div>
+            <div class="fw-sky fw-sky-2">
+              <div class="burst-ring br-3"></div>
+              <div class="burst-ring br-4"></div>
+            </div>
+            <div class="fw-sky fw-sky-3">
+              <div class="burst-ring br-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ground ground-dusk" aria-hidden="true">
+          <!-- Lawn chairs with silhouettes -->
+          <div class="lawn-scene">
+            <div class="chair-group">
+              <div class="lawn-chair lc1">
+                <div class="chair-back"></div>
+                <div class="chair-seat"></div>
+                <div class="person-sil ps1"></div>
+              </div>
+              <div class="lawn-chair lc2">
+                <div class="chair-back"></div>
+                <div class="chair-seat"></div>
+                <div class="person-sil ps2"></div>
+              </div>
+              <div class="lawn-chair lc3">
+                <div class="chair-back"></div>
+                <div class="chair-seat"></div>
+                <div class="person-sil ps3"></div>
+              </div>
+            </div>
+            <!-- Sparkler holders -->
+            <div class="sparkler-group">
+              <div class="sparkler-item si1">
+                <div class="sparkler-stick"></div>
+                <div class="sparkler-glow"></div>
+                <div class="sparkle-particles">
+                  <span class="sp sp1">✦</span>
+                  <span class="sp sp2">✦</span>
+                  <span class="sp sp3">·</span>
+                  <span class="sp sp4">✦</span>
+                  <span class="sp sp5">·</span>
+                  <span class="sp sp6">✦</span>
+                </div>
+              </div>
+              <div class="sparkler-item si2">
+                <div class="sparkler-stick"></div>
+                <div class="sparkler-glow"></div>
+                <div class="sparkle-particles">
+                  <span class="sp sp1">✦</span>
+                  <span class="sp sp2">·</span>
+                  <span class="sp sp3">✦</span>
+                  <span class="sp sp4">·</span>
+                  <span class="sp sp5">✦</span>
+                  <span class="sp sp6">✦</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-text hero-text-3">
+          <p class="hero-eyebrow">Chapter Three</p>
+          <h2 class="hero-title">United<br/>We Stand</h2>
+          <p class="hero-sub">The fireflies come out.<br/>Sparklers light up the yard.<br/>Everyone remembers why they showed up.</p>
+        </div>
+      </div>
+
+      <!-- UNITY SECTION -->
+      <div class="unity-section">
+        <div class="unity-inner">
+          <h2 class="unity-title">
+            <span class="star-deco" aria-hidden="true">★</span>
+            This Is America
+            <span class="star-deco" aria-hidden="true">★</span>
+          </h2>
+          <p class="unity-body">
+            A backyard. A grill. A dog who steals one hot dog and everyone laughs. Kids
+            running until they fall asleep in lawn chairs. Neighbors you only see twice
+            a year — and somehow, it feels like family.
+          </p>
+          <p class="unity-body">
+            The fireworks haven't started yet in the sky, but they've been going all day
+            in the yard. This is what the 4th of July actually is: ordinary people,
+            extraordinary company, and one perfect summer evening.
+          </p>
+
+          <!-- Animated flag stripes -->
+          <div class="flag-stripes" aria-hidden="true">
+            <span class="fs-stripe"></span>
+            <span class="fs-stripe"></span>
+            <span class="fs-stripe"></span>
+            <span class="fs-stripe"></span>
+            <span class="fs-stripe"></span>
+            <span class="fs-stripe"></span>
+            <span class="fs-stripe"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINAL TRIBUTE CARDS -->
+      <div class="tribute-section">
+        <div class="tribute-grid">
+
+          <article class="tribute-card tc-blue">
+            <div class="tc-num" aria-hidden="true">1776</div>
+            <h3 class="tc-title">Independence</h3>
+            <p class="tc-body">Two hundred and fifty years of choosing to be free, together.</p>
+          </article>
+
+          <article class="tribute-card tc-red">
+            <div class="tc-icon" aria-hidden="true">🦅</div>
+            <h3 class="tc-title">Unity</h3>
+            <p class="tc-body">E pluribus unum. Out of many, one. One backyard. One nation.</p>
+          </article>
+
+          <article class="tribute-card tc-gold">
+            <div class="tc-icon" aria-hidden="true">✨</div>
+            <h3 class="tc-title">Tomorrow</h3>
+            <p class="tc-body">The best of America is still being written — by people like us.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- STRIPE DIVIDER -->
+      <div class="stripe-divider" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- PAGE NAV -->
+      <div class="page-nav page-nav-both" aria-label="Chapter navigation">
+        <a href="#page-2" class="page-btn page-btn-prev" aria-label="Previous chapter: Patriot's Plaza">
+          <span class="btn-arrow" aria-hidden="true">←</span>
+          Back: Patriot's Plaza
+        </a>
+        <a href="#page-1" class="page-btn page-btn-next" aria-label="Start over at Freedom's Dawn">
+          Read Again: Freedom's Dawn
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <footer class="page-footer page-footer-final">
+        <p class="footer-project">Stars &amp; Stripes Canvas &nbsp;·&nbsp; A 4th of July Storybook &nbsp;·&nbsp; HTML &amp; CSS Only</p>
+        <p class="footer-credit">Built for Web Development Class &nbsp;·&nbsp; GSU &nbsp;·&nbsp; June 2026</p>
+        <p class="footer-quote">"Freedom is the most powerful creative force. This project celebrates American independence through code and creativity."</p>
+        <div class="footer-stars" aria-hidden="true">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+</body>
+</html>

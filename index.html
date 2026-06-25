@@ -1,198 +1,243 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Stars & Stripes Canvas</title>
-
+<title>Stars & Stripes Canvas — A Beach Independence Day Storybook</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Permanent+Marker&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stars_and_stripes.css">
 </head>
-
 <body>
 
-<header>
+<a class="skip-link" href="#main">Skip to storybook</a>
 
-<h1>Stars & Stripes Canvas</h1>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#dawn"><span aria-hidden="true">🎆</span> Stars &amp; Stripes Canvas</a>
 
-<nav>
-<a href="#dawn">Freedom's Dawn</a>
-<a href="#plaza">Patriot's Plaza</a>
-<a href="#united">United We Stand</a>
-</nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="sr-only">Menu</span>
+    </label>
 
+    <nav class="site-nav" aria-label="Storybook chapters">
+      <a href="#dawn">Freedom's Dawn</a>
+      <a href="#plaza">Patriot's Plaza</a>
+      <a href="#united">United We Stand</a>
+    </nav>
+  </div>
+  <div class="bunting" aria-hidden="true"></div>
 </header>
 
-<main>
+<main id="main">
 
-<section id="dawn" class="page">
+  <!-- ===================== PAGE 1 ===================== -->
+  <section class="page" id="dawn" aria-labelledby="dawn-heading">
 
-<div class="hero hero-one">
+    <div class="hero hero-dawn">
+      <div class="stars-field" aria-hidden="true">
+        <span class="star s1">★</span><span class="star s2">★</span><span class="star s3">★</span>
+        <span class="star s4">★</span><span class="star s5">★</span><span class="star s6">★</span>
+        <span class="star s7">★</span><span class="star s8">★</span><span class="star s9">★</span>
+        <span class="star s10">★</span>
+      </div>
+      <div class="birds" aria-hidden="true">
+        <span class="bird b1">⌃</span><span class="bird b2">⌃</span><span class="bird b3">⌃</span>
+      </div>
+      <div class="sun-glow" aria-hidden="true"></div>
+      <div class="sun" aria-hidden="true"></div>
+      <h1 id="dawn-heading" class="hero-title">Freedom's Dawn</h1>
+      <p class="hero-sub">The sky over the shore turns gold as a new Independence Day begins.</p>
+    </div>
 
-<div class="overlay">
+    <section class="interactive" aria-label="Interactive scene elements">
+      <h2 class="section-title">Wake the Shoreline</h2>
+      <div class="interactive-grid">
 
-<h2>Freedom's Dawn</h2>
+        <div class="flag-pole" tabindex="0">
+          <div class="pole" aria-hidden="true"></div>
+          <div class="flag" aria-hidden="true"></div>
+          <p class="hint">Hover or focus the flag</p>
+        </div>
 
-<p>
-The sun rises over the Atlantic as families prepare for a day of celebration.
-</p>
+        <div class="spark-cluster" tabindex="0">
+          <span class="spark sp1" aria-hidden="true">★</span>
+          <span class="spark sp2" aria-hidden="true">★</span>
+          <span class="spark sp3" aria-hidden="true">★</span>
+          <p class="hint">Hover or focus the stars in the sand</p>
+        </div>
 
-<a href="#plaza" class="btn">Continue</a>
+        <div class="gull" tabindex="0" aria-hidden="true">🕊️</div>
 
-</div>
+      </div>
+    </section>
 
-</div>
+    <section class="cards" aria-label="Scene details">
+      <h2 class="section-title">What's Stirring at First Light</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Quiet Tide</h3>
+          <p>Waves wash gently onto the sand as the beach wakes beneath a brightening sky.</p>
+        </article>
+        <article class="card">
+          <h3>First Families</h3>
+          <p>Early risers spread blankets and raise the first flags of the day along the shore.</p>
+        </article>
+        <article class="card">
+          <h3>Fading Stars</h3>
+          <p>Night's last stars flicker and dim as sunlight spreads across the water.</p>
+        </article>
+      </div>
+    </section>
 
-<div class="cards">
+    <a class="page-turn" href="#plaza">Continue to Patriot's Plaza →</a>
+  </section>
 
-<article class="card">
-<h3>Ocean Sunrise</h3>
-<p>Golden light spreads across the water.</p>
-</article>
+  <!-- ===================== PAGE 2 ===================== -->
+  <section class="page" id="plaza" aria-labelledby="plaza-heading">
 
-<article class="card">
-<h3>Patriotic Spirit</h3>
-<p>Flags wave along the shoreline.</p>
-</article>
+    <div class="hero hero-plaza">
+      <div class="confetti" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="cloud c1" aria-hidden="true"></div>
+      <div class="cloud c2" aria-hidden="true"></div>
+      <h1 id="plaza-heading" class="hero-title">Patriot's Plaza</h1>
+      <p class="hero-sub">The boardwalk fills with music, sparklers, and red-white-and-blue cheer.</p>
+    </div>
 
-<article class="card">
-<h3>Morning Flight</h3>
-<p>Seagulls glide across the sky.</p>
-</article>
+    <section class="interactive" aria-label="Interactive scene elements">
+      <h2 class="section-title">Stroll the Boardwalk</h2>
+      <div class="interactive-grid">
 
-</div>
+        <div class="sparkler" tabindex="0">
+          <span class="sparkler-tip" aria-hidden="true">✨</span>
+          <span class="trail" aria-hidden="true"></span>
+          <span class="trail" aria-hidden="true"></span>
+          <span class="trail" aria-hidden="true"></span>
+          <span class="trail" aria-hidden="true"></span>
+          <p class="hint">Hover or focus the sparkler</p>
+        </div>
 
-</section>
+        <div class="cart-track" aria-hidden="true">
+          <span class="cart">🛒</span>
+        </div>
 
-<section id="plaza" class="page">
+        <div class="dog" tabindex="0" aria-hidden="true">🐕</div>
 
-<div class="hero hero-two">
+      </div>
+    </section>
 
-<div class="overlay">
+    <section class="cards" aria-label="Scene details">
+      <h2 class="section-title">Along the Boardwalk</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Ice Cream Cart</h3>
+          <p>A vendor rolls slowly past, trailing the smell of waffle cones and sea salt air.</p>
+        </article>
+        <article class="card">
+          <h3>Sparkler Trails</h3>
+          <p>Kids wave sparklers in lazy arcs, leaving glowing trails against the dusk.</p>
+        </article>
+        <article class="card">
+          <h3>Salt-Air Pups</h3>
+          <p>A dog in a flag bandana trots between beach chairs, chasing the breeze.</p>
+        </article>
+      </div>
+    </section>
 
-<h2>Patriot's Plaza</h2>
+    <a class="page-turn" href="#united">Continue to United We Stand →</a>
+  </section>
 
-<p>
-Families gather along the beach enjoying music, food, games, and summer fun.
-</p>
+  <!-- ===================== PAGE 3 ===================== -->
+  <section class="page" id="united" aria-labelledby="united-heading">
 
-</div>
+    <div class="hero hero-united">
+      <div class="fireworks-sky" aria-hidden="true">
 
-</div>
+        <div class="shell shell-red">
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+        </div>
+        <div class="shell shell-gold">
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+        </div>
+        <div class="shell shell-blue">
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+        </div>
+        <div class="shell shell-red shell-small">
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+          <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+        </div>
 
-<div class="beach-scene">
+      </div>
+      <div class="ocean" aria-hidden="true"></div>
+      <h1 id="united-heading" class="hero-title">United We Stand</h1>
+      <p class="hero-sub">Fireworks bloom over the dark ocean as the whole shoreline watches together.</p>
+    </div>
 
-<div class="wave wave1"></div>
-<div class="wave wave2"></div>
+    <section class="interactive" aria-label="Interactive scene elements">
+      <h2 class="section-title">Light Up the Sky</h2>
+      <div class="interactive-grid">
 
-<div class="seagull s1">🕊</div>
-<div class="seagull s2">🕊</div>
+        <div class="launcher">
+          <input type="checkbox" id="launch1" class="launch-input">
+          <label for="launch1" class="launch-button">🎇 Launch Firework</label>
+          <span class="firework-burst" aria-hidden="true">
+            <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+            <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+          </span>
+        </div>
 
-<div class="vendor">🍦</div>
+        <div class="firework-hover" tabindex="0">
+          <span class="burst-icon" aria-hidden="true">🎆</span>
+          <span class="spark-ring" aria-hidden="true">
+            <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+            <span class="spark"></span><span class="spark"></span><span class="spark"></span><span class="spark"></span>
+          </span>
+          <p class="hint">Hover or focus to burst</p>
+        </div>
 
-</div>
+        <div class="seagulls" aria-hidden="true">🕊️ 🕊️</div>
 
-<div class="cards">
+      </div>
+    </section>
 
-<article class="card">
-<h3>Boardwalk Treats</h3>
-<p>Visitors enjoy snacks and ice cream.</p>
-</article>
+    <section class="cards" aria-label="Scene details">
+      <h2 class="section-title">Together on the Sand</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Blankets &amp; Lights</h3>
+          <p>Families gather shoulder to shoulder, blankets glowing under bursts of color.</p>
+        </article>
+        <article class="card">
+          <h3>Stars in the Sand</h3>
+          <p>Wet sand mirrors every firework, doubling the show beneath bare feet.</p>
+        </article>
+        <article class="card">
+          <h3>One Shoreline</h3>
+          <p>As the finale rises, the whole beach cheers together as one community.</p>
+        </article>
+      </div>
+    </section>
 
-<article class="card">
-<h3>Beach Gathering</h3>
-<p>Families relax on blankets watching the ocean.</p>
-</article>
-
-<article class="card">
-<h3>Summer Celebration</h3>
-<p>Music and laughter fill the air.</p>
-</article>
-
-</div>
-
-<div class="center">
-<a href="#united" class="btn">Finale</a>
-</div>
-
-</section>
-
-<section id="united" class="page">
-
-<div class="hero hero-three">
-
-<div class="overlay">
-
-<h2>United We Stand</h2>
-
-<p>
-Night falls as fireworks illuminate the coastline.
-</p>
-
-</div>
-
-</div>
-
-<div class="fireworks">
-
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-
-</div>
-
-<div class="cards">
-
-<article class="card">
-<h3>Fireworks</h3>
-<p>Brilliant colors fill the sky.</p>
-</article>
-
-<article class="card">
-<h3>Community</h3>
-<p>Families celebrate together.</p>
-</article>
-
-<article class="card">
-<h3>Freedom</h3>
-<p>A reminder of unity and independence.</p>
-</article>
-
-</div>
-
-<div class="video-container">
-
-<iframe
-src="https://www.youtube.com/embed/9ETrr-XHBjE"
-title="Patriotic Celebration"
-allowfullscreen>
-</iframe>
-
-</div>
-
-<div class="center">
-<a href="#dawn" class="btn">Start Again</a>
-</div>
-
-</section>
+    <a class="page-turn" href="#dawn">Return to Freedom's Dawn ↻</a>
+  </section>
 
 </main>
 
-<footer>
-
-<p>
-Celebrating freedom, family, community, and the American spirit.
-</p>
-
+<footer class="site-footer">
+  <p>Stars &amp; Stripes Canvas — A Storybook Coding Challenge</p>
+  <p class="patriotic-statement">"Freedom is the most powerful creative force."</p>
 </footer>
 
 </body>
 </html>
-```
